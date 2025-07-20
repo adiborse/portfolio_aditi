@@ -1,12 +1,52 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React, { useState } from "react";
+import { HeroSection } from "@/components/hero-section";
+import { ProjectGallery } from "@/components/project-gallery";
+import { AboutSection } from "@/components/about-section";
+import { ContactSection } from "@/components/contact-section";
+import { DarkModeToggle } from "@/components/dark-mode-toggle";
 
 const Index = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+    
+    // If there's a search query, scroll to projects section
+    if (query.trim()) {
+      setTimeout(() => {
+        document.getElementById('projects')?.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
+    }
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      {/* Dark Mode Toggle */}
+      <DarkModeToggle />
+      
+      {/* Hero Section */}
+      <HeroSection onSearch={handleSearch} />
+      
+      {/* Project Gallery */}
+      <ProjectGallery searchQuery={searchQuery} />
+      
+      {/* About Section */}
+      <AboutSection />
+      
+      {/* Contact Section */}
+      <ContactSection />
+      
+      {/* Footer */}
+      <footer className="py-8 px-6 border-t border-vintage-gold/20 bg-vintage-parchment/30">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="font-cormorant text-muted-foreground">
+            © 2024 Aditi Borse. Crafted with love and attention to detail.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

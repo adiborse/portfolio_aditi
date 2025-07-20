@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'display': ['Playfair Display', 'serif'],
+				'cormorant': ['Cormorant Garamond', 'serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,12 +65,32 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Vintage color palette
+				vintage: {
+					champagne: 'hsl(var(--champagne))',
+					'dusty-rose': 'hsl(var(--dusty-rose))',
+					'olive-green': 'hsl(var(--olive-green))',
+					gold: 'hsl(var(--vintage-gold))',
+					cream: 'hsl(var(--cream))',
+					parchment: 'hsl(var(--parchment))',
 				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			backgroundImage: {
+				'gradient-vintage': 'var(--gradient-vintage)',
+				'gradient-luxury': 'var(--gradient-luxury)',
+			},
+			boxShadow: {
+				'vintage': 'var(--shadow-vintage)',
+				'gold': 'var(--shadow-gold)',
+			},
+			transitionTimingFunction: {
+				'silk': 'cubic-bezier(0.23, 1, 0.32, 1)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +108,40 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(20px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
+				'shimmer': {
+					'0%': {
+						backgroundPosition: '200% 0'
+					},
+					'100%': {
+						backgroundPosition: '-200% 0'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'shimmer': 'shimmer 2s linear infinite',
 			}
 		}
 	},
