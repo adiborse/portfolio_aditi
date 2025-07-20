@@ -6,10 +6,10 @@ import portraitImage from "@/assets/aditi-portrait.jpg";
 
 export const AboutSection = () => {
   const skills = [
-    { icon: Palette, name: "UI/UX Design", description: "Crafting intuitive and beautiful user experiences" },
-    { icon: Code, name: "Frontend Development", description: "Bringing designs to life with modern technologies" },
-    { icon: Heart, name: "User Research", description: "Understanding user needs through empathy and data" },
-    { icon: Award, name: "Design Strategy", description: "Aligning business goals with user-centered design" }
+    { icon: Code, name: "Languages & Databases", description: "Python, Java, Dart, MySQL, MongoDB" },
+    { icon: Palette, name: "Frameworks & Tools", description: "Bootstrap, React, GitHub, VSCode, Figma, Canva, Flutter" },
+    { icon: Heart, name: "Web Technologies", description: "HTML, CSS, JavaScript, Node.js, Express, Flask" },
+    { icon: Award, name: "AI/ML", description: "TensorFlow, PyTorch, YOLO, CNN, OpenCV, NLP" }
   ];
 
   return (
@@ -48,21 +48,21 @@ export const AboutSection = () => {
               </h2>
               <div className="space-y-4 font-cormorant text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  Hello, I'm Aditi Borse, a passionate UI/UX Designer and Engineer based in India. 
-                  With over 3 years of experience, I specialize in creating digital experiences 
-                  that are both aesthetically beautiful and functionally exceptional.
+                  Hello, I'm Aditi Borse, a passionate Software Engineer and Designer currently pursuing 
+                  B.E in Information Technology at Datta Meghe College of Engineering. I specialize in 
+                  creating innovative digital solutions that blend cutting-edge technology with user-centered design.
                 </p>
                 <p>
-                  My journey began with a love for both art and technology. I believe that great 
-                  design happens at the intersection of human empathy and technical innovation. 
-                  Every project I take on is an opportunity to solve real problems and create 
-                  meaningful connections between users and technology.
+                  My expertise spans across full-stack development, AI/ML, mobile app development, and UI/UX design. 
+                  I'm passionate about building scalable systems, implementing AI-powered solutions, and creating 
+                  intuitive user experiences. From banking systems to safety applications, I love solving complex 
+                  real-world problems through technology.
                 </p>
                 <p>
-                  When I'm not designing, you'll find me exploring vintage markets, reading about 
-                  design history, or experimenting with new creative techniques. I draw inspiration 
-                  from the timeless elegance of classic design while embracing the possibilities 
-                  of modern technology.
+                  I'm a hackathon winner and have ranked among top performers in various competitions. 
+                  My skills include Data Structures, Algorithms, Problem Solving, Scalable System Design, 
+                  and Cloud Computing. I believe in continuous learning and staying updated with the latest 
+                  technological advancements.
                 </p>
               </div>
             </div>

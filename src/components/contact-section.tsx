@@ -39,9 +39,9 @@ export const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "hello@aditiborse.com", href: "mailto:hello@aditiborse.com" },
-    { icon: Phone, label: "Phone", value: "+91 98765 43210", href: "tel:+919876543210" },
-    { icon: MapPin, label: "Location", value: "Mumbai, India", href: "#" }
+    { icon: Mail, label: "Email", value: "adi.borse2104@gmail.com", href: "mailto:adi.borse2104@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91-9373847863", href: "tel:+919373847863" },
+    { icon: MapPin, label: "Location", value: "Airoli, Navi Mumbai", href: "#" }
   ];
 
   const socialLinks = [

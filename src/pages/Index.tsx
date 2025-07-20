@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { HeroSection } from "@/components/hero-section";
 import { ProjectGallery } from "@/components/project-gallery";
 import { AboutSection } from "@/components/about-section";
+import { AchievementsSection } from "@/components/achievements-section";
 import { ContactSection } from "@/components/contact-section";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 
@@ -35,6 +36,9 @@ const Index = () => {
       
       {/* About Section */}
       <AboutSection />
+      
+      {/* Achievements Section */}
+      <AchievementsSection />
       
       {/* Contact Section */}
       <ContactSection />

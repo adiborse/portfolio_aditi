@@ -9,51 +9,51 @@ import project2 from "@/assets/project-2.jpg";
 const projects = [
   {
     id: 1,
-    title: "Luxury E-commerce Platform",
-    description: "A sophisticated e-commerce experience for high-end fashion brands, featuring immersive product galleries and seamless checkout flows.",
+    title: "VyomAssist - AI-Powered Banking Support System",
+    description: "Built a smart assistant for Union Bank's Vyom app to help customers get instant support through chat, voice, and video. Integrated face recognition and Aadhaar-based verification to ensure secure login and authentication.",
     image: project1,
-    tags: ["UI/UX Design", "React", "Figma", "E-commerce"],
-    category: "Web Design",
+    tags: ["Flutter", "React", "Node.js", "Spring Boot", "Flask", "Google Cloud", "TensorFlow", "Blockchain"],
+    category: "AI/ML",
     year: "2024",
     link: "#",
     github: "#"
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    description: "Intuitive mobile banking application with focus on accessibility and user trust, featuring biometric authentication and smart financial insights.",
+    title: "StudySync - Virtual Learning Platform",
+    description: "Created a virtual learning platform for students from diverse fields to collaborate and study together. Enabled group discussions, doubt clearing, and project collaboration to promote peer learning.",
     image: project2,
-    tags: ["Mobile Design", "React Native", "User Research", "FinTech"],
-    category: "Mobile App",
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Node.js", "Express", "MongoDB"],
+    category: "Web Platform",
     year: "2024",
     link: "#",
     github: "#"
   },
   {
     id: 3,
-    title: "Creative Agency Website",
-    description: "Award-winning website for a creative agency, showcasing dynamic animations and storytelling through interactive elements.",
+    title: "Raksha - Mobile Safety App",
+    description: "Developed a mobile safety app with real-time alerts, live tracking, and community support. Built a web platform for law enforcement with video surveillance, weapon detection, and vehicle tracking.",
     image: project1,
-    tags: ["Web Design", "Animation", "Creative Direction", "Branding"],
-    category: "Web Design",
+    tags: ["Flutter", "Dart", "MERN Stack", "AI", "ML", "Computer Vision"],
+    category: "Mobile App",
     year: "2023",
     link: "#",
     github: "#"
   },
   {
     id: 4,
-    title: "Health & Wellness App",
-    description: "Comprehensive wellness platform combining meditation, fitness tracking, and personalized health recommendations.",
+    title: "AI-Powered Safety Analytics System",
+    description: "Led the development of an AI-powered real-time safety analytics system for Smart India Hackathon 2024, enhancing public security measures and impacting over a million users nationwide.",
     image: project2,
-    tags: ["UX Research", "Health Tech", "Data Visualization", "iOS"],
-    category: "Mobile App",
-    year: "2023",
+    tags: ["AI", "Computer Vision", "Real-time Analytics", "Public Safety", "Python"],
+    category: "AI/ML",
+    year: "2024",
     link: "#",
     github: "#"
   }
 ];
 
-const categories = ["All", "Web Design", "Mobile App", "Branding"];
+const categories = ["All", "AI/ML", "Web Platform", "Mobile App"];
 
 interface ProjectGalleryProps {
   searchQuery: string;
