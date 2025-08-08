@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# Aditi Borse - Portfolio
 
-## Project info
+A sophisticated vintage-themed portfolio showcasing full-stack development projects with a focus on AI, banking solutions, and women safety technology.
 
-**URL**: https://lovable.dev/projects/7714a263-62c0-45d1-b423-4a8cbb313cfc
+## ✨ Features
 
-## How can I edit this code?
+- **Video-based Project Showcase**: Interactive video demonstrations of major projects
+- **Vintage Design**: Elegant vintage aesthetic with gold accents and custom typography
+- **Responsive**: Fully responsive design optimized for all devices
+- **Interactive Elements**: Custom video controls, smooth animations, and hover effects
+- **Modern Tech Stack**: Built with React, TypeScript, Tailwind CSS, and Vite
 
-There are several ways of editing your application.
+## 🚀 Projects Featured
 
-**Use Lovable**
+### 1. VyomAssist - AI Banking Support System
+Smart assistant for Union Bank's Vyom app with face recognition and Aadhaar-based verification.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7714a263-62c0-45d1-b423-4a8cbb313cfc) and start prompting.
+### 2. Raksha - Women Safety Analytics
+Winner of Smart India Hackathon 2024. AI-powered real-time safety analytics system.
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3. LokYatri - Smart Transportation
+Comprehensive transportation solution with smart routing and real-time tracking.
 
-**Use your preferred IDE**
+### 4. InfluencerHub - Social Media Management
+Centralized platform with real-time analytics and AI-powered content generation.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS with custom vintage theme
+- **UI Components**: Radix UI components with custom styling
+- **Icons**: Lucide React
+- **Build Tool**: Vite
+- **Deployment**: Ready for Vercel, Netlify, or GitHub Pages
 
-Follow these steps:
+## 📦 Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+```bash
+git clone https://github.com/adiborse/aditi-vintage-folio.git
+cd aditi-vintage-folio
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🏗️ Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The build artifacts will be stored in the `dist/` directory.
 
-## What technologies are used for this project?
+## 🌐 Deployment
 
-This project is built with:
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Vercel will automatically detect it's a Vite project
+3. Deploy with one click
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Netlify
+1. Build the project: `npm run build`
+2. Drag and drop the `dist` folder to Netlify
 
-## How can I deploy this project?
+### GitHub Pages
+1. Build the project: `npm run build`
+2. Deploy the `dist` folder to GitHub Pages
 
-Simply open [Lovable](https://lovable.dev/projects/7714a263-62c0-45d1-b423-4a8cbb313cfc) and click on Share -> Publish.
+## 📁 Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+src/
+├── components/           # React components
+│   ├── ui/              # Reusable UI components
+│   ├── project-gallery.tsx  # Main project showcase
+│   ├── hero-section.tsx     # Landing section
+│   ├── about-section.tsx    # About information
+│   ├── skills-section.tsx   # Skills display
+│   └── ...
+├── pages/               # Page components
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+└── assets/              # Static assets
+```
 
-Yes, you can!
+## 🎨 Design Features
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Custom Vintage Theme**: Gold accent colors with warm tones
+- **Typography**: Playfair Display for headings, Cormorant Garamond for body text
+- **Interactive Videos**: Custom video controls with progress tracking
+- **Smooth Animations**: Framer Motion-style transitions
+- **Accessibility**: ARIA labels and keyboard navigation support
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📱 Responsive Design
+
+- Mobile-first approach
+- Optimized touch targets for mobile devices
+- Responsive video controls
+- Adaptive grid layouts
+
+## 🔧 Customization
+
+The portfolio is highly customizable:
+
+1. **Projects**: Update the `projects` array in `project-gallery.tsx`
+2. **Personal Info**: Modify content in various section components
+3. **Styling**: Customize the vintage theme in `tailwind.config.ts`
+4. **Colors**: Update color variables in the CSS files
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contact
+
+**Aditi Borse**
+- GitHub: [@adiborse](https://github.com/adiborse)
+- Portfolio: [Live Demo](https://aditi-vintage-folio.vercel.app)
+
+---
+
+⭐ If you like this portfolio, please give it a star on GitHub!
