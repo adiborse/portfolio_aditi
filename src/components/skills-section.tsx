@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Code2, Palette, Database, Brain, Cloud, Smartphone, Globe, Shield } from "lucide-react";
 import { VintageCard } from "@/components/ui/vintage-card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const skillCategories = {
@@ -121,23 +120,15 @@ export const SkillsSection = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="flex flex-wrap gap-3">
                   {category.skills.map((skill, index) => (
-                    <div key={index} className="space-y-3">
-                      <div className="flex justify-between items-center">
-                        <span className="font-cormorant font-semibold text-foreground">{skill.name}</span>
-                        <div className="flex items-center gap-2">
-                          <Badge variant="outline" className="text-xs font-cormorant">
-                            {skill.experience}
-                          </Badge>
-                          <span className="text-sm text-vintage-gold font-cormorant">{skill.level}%</span>
-                        </div>
-                      </div>
-                      <Progress 
-                        value={skill.level} 
-                        className="h-2 bg-vintage-cream"
-                      />
-                    </div>
+                    <Badge
+                      key={index}
+                      variant="outline"
+                      className="px-4 py-2 text-sm font-cormorant border-vintage-gold/30 text-foreground hover:bg-vintage-gold/10 transition-colors duration-300"
+                    >
+                      {skill.name}
+                    </Badge>
                   ))}
                 </div>
               </VintageCard>

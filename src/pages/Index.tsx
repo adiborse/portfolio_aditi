@@ -4,11 +4,6 @@ import { ProjectGallery } from "@/components/project-gallery";
 import { AboutSection } from "@/components/about-section";
 import { SkillsSection } from "@/components/skills-section";
 import { ExperienceTimeline } from "@/components/experience-timeline";
-import { EducationSection } from "@/components/education-section";
-import { CertificationsSection } from "@/components/certifications-section";
-import { AchievementsSection } from "@/components/achievements-section";
-import { BlogSection } from "@/components/blog-section";
-import { TestimonialsSection } from "@/components/testimonials-section";
 import { ContactSection } from "@/components/contact-section";
 import { DarkModeToggle } from "@/components/dark-mode-toggle";
 
@@ -48,21 +43,6 @@ const Index = () => {
       
       {/* Experience Timeline */}
       <ExperienceTimeline />
-      
-      {/* Education Section */}
-      <EducationSection />
-      
-      {/* Certifications Section */}
-      <CertificationsSection />
-      
-      {/* Achievements Section */}
-      <AchievementsSection />
-      
-      {/* Blog Section */}
-      <BlogSection searchQuery={searchQuery} />
-      
-      {/* Testimonials Section */}
-      <TestimonialsSection />
       
       {/* Contact Section */}
       <ContactSection />

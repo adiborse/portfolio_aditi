@@ -2,7 +2,6 @@ import React from "react";
 import { Palette, Code, Heart, Award } from "lucide-react";
 import { VintageCard } from "@/components/ui/vintage-card";
 import { Button } from "@/components/ui/button";
-import portraitImage from "@/assets/aditi-portrait.jpg";
 
 export const AboutSection = () => {
   const skills = [
@@ -21,7 +20,7 @@ export const AboutSection = () => {
             <VintageCard textured className="p-8">
               <div className="aspect-square rounded-2xl overflow-hidden mb-6">
                 <img
-                  src={portraitImage}
+                  src="/images/ADITI_BORSE_IT.png"
                   alt="Aditi Borse"
                   className="w-full h-full object-cover"
                 />

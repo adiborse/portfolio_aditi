@@ -2,29 +2,20 @@ import React from "react";
 import { Calendar, MapPin, Building, Award } from "lucide-react";
 import { VintageCard } from "@/components/ui/vintage-card";
 import { Badge } from "@/components/ui/badge";
+import hackathonWinner from "@/assets/hackathon-winner.png";
+import educationImage from "/Screenshot 2025-07-21 205808.png";
+import unionBankImage from "/unionbank.jpg";
+import ideBootcampImage from "/Screenshot 2025-07-23 185659.png";
+import lendenImage from "/lenden.jpg";
 
 const experiences = [
-  {
-    title: "Software Engineer & AI Developer",
-    company: "Freelance & Project Work",
-    location: "Remote",
-    period: "2023 - Present",
-    type: "Professional Experience",
-    description: "Leading development of AI-powered applications and full-stack solutions. Specialized in banking systems, safety applications, and educational platforms with focus on user experience and scalability.",
-    achievements: [
-      "Developed AI-powered banking assistant for Union Bank",
-      "Created safety analytics system impacting 1M+ users",
-      "Built virtual learning platform for peer collaboration",
-      "Implemented facial recognition and identity verification systems"
-    ],
-    technologies: ["React", "Flutter", "Python", "AI/ML", "Cloud Computing"]
-  },
   {
     title: "B.E Information Technology",
     company: "Datta Meghe College of Engineering",
     location: "Navi Mumbai, India",
     period: "2022 - 2026",
     type: "Education",
+    image: educationImage,
     description: "Pursuing Bachelor of Engineering in Information Technology with focus on software development, artificial intelligence, and system design. Active participant in hackathons and technical competitions.",
     achievements: [
       "Consistent academic performance with strong foundation in CS fundamentals",
@@ -35,19 +26,21 @@ const experiences = [
     technologies: ["Data Structures", "Algorithms", "System Design", "Database Management"]
   },
   {
-    title: "Smart India Hackathon Winner",
-    company: "Government of India",
+    title: "Smart India Hackathon Winner 2024",
+    company: "Government of India - BIL",
     location: "National Level",
     period: "2024",
     type: "Achievement",
-    description: "Led a team to develop an AI-powered real-time safety analytics system that enhances public security measures. The solution was recognized for its innovation and potential impact on national security.",
+    image: hackathonWinner,
+    description: "Winner of Smart India Hackathon 2024 for women safety problem statement given by BIL (Bharat Electronics Limited). Led a team to develop an AI-powered real-time safety analytics system that enhances public security measures with special focus on women safety. The solution was recognized for its innovation and potential impact on national security.",
     achievements: [
-      "National level recognition for innovative AI solution",
+      "National level winner for women safety AI solution",
       "Led cross-functional team of 6 developers and designers",
-      "Developed scalable system architecture for real-time analytics",
-      "Presented solution to government officials and industry experts"
+      "Developed scalable system architecture for real-time safety analytics",
+      "Presented solution to government officials and BIL representatives",
+      "Created comprehensive women safety monitoring system"
     ],
-    technologies: ["AI", "Real-time Analytics", "Computer Vision", "Public Safety Tech"]
+    technologies: ["AI", "Real-time Analytics", "Computer Vision", "Women Safety Tech", "BIL Integration"]
   },
   {
     title: "AI Innovation Developer",
@@ -55,6 +48,7 @@ const experiences = [
     location: "Mumbai, India",
     period: "2024",
     type: "Competition",
+    image: unionBankImage,
     description: "Secured 5th rank in Union Bank's IdeaHackathon by developing an AI-driven identity verification system with facial recognition and automated query management for banking operations.",
     achievements: [
       "5th rank among hundreds of participants nationwide",
@@ -65,19 +59,39 @@ const experiences = [
     technologies: ["Flutter", "Facial Recognition", "Blockchain", "Spring Boot", "Cloud Security"]
   },
   {
-    title: "Technical Project Lead",
-    company: "Academic & Personal Projects",
-    location: "Mumbai, India",
-    period: "2022 - 2024",
-    type: "Leadership",
-    description: "Led multiple technical projects from conception to deployment, focusing on real-world problem solving through innovative technology solutions. Managed teams and coordinated with stakeholders.",
+    title: "LenDenClub - The Matrix Protocol AI Hackathon",
+    company: "Team SHILEDAR - Final Round",
+    location: "India",
+    period: "2024",
+    type: "Competition",
+    image: lendenImage,
+    description: "Made it to the final round of LenDenClub's The Matrix Protocol AI Hackathon, standing among the top teams out of 1800+ participants from across India. Built VoxGenie, a real-time multilingual AI voice assistant to simplify P2P lending for diverse Indian users in just 48 hours.",
     achievements: [
-      "Successfully delivered 5+ major projects",
-      "Mentored junior developers and designers",
-      "Established best practices for code quality and documentation",
-      "Coordinated with cross-functional teams and stakeholders"
+      "Finalist among 1800+ participants from across India",
+      "Built VoxGenie AI assistant with multilingual capabilities",
+      "Led UI/UX design and final presentation for Team SHILEDAR",
+      "Developed real-time voice assistant with biometric authentication",
+      "Created inclusive financial literacy solution with multi-modal input",
+      "Enabled code-mixed & regional language conversations"
     ],
-    technologies: ["Project Management", "Team Leadership", "Agile Methodology", "Full-Stack Development"]
+    technologies: ["AI Voice Assistant", "UI/UX Design", "Multilingual AI", "Biometric Auth", "Financial Tech", "Real-time Processing"]
+  },
+  {
+    title: "Innovation Design and Entrepreneurship (IDE) Bootcamp",
+    company: "AICTE & MIC - Government Initiative",
+    location: "Mumbai, India",
+    period: "2025",
+    type: "Leadership",
+    image: ideBootcampImage,
+    description: "Selected participant for the Second Edition of Innovation Design and Entrepreneurship (IDE) Bootcamp organized by AICTE and MIC. This intensive program focuses on fostering innovation, design thinking, and entrepreneurial mindset among aspiring innovators and future leaders.",
+    achievements: [
+      "Selected among limited participants for prestigious government bootcamp",
+      "Focused on innovation design and entrepreneurial development",
+      "Exposure to design thinking methodologies and startup ecosystem",
+      "Networking with industry experts and fellow innovators",
+      "Developing skills in product development and business strategy"
+    ],
+    technologies: ["Design Thinking", "Innovation Management", "Entrepreneurship", "Product Development", "Business Strategy"]
   }
 ];
 
@@ -144,10 +158,32 @@ export const ExperienceTimeline = () => {
                       </Badge>
                     </div>
 
-                    {/* Description */}
-                    <p className="text-muted-foreground font-cormorant leading-relaxed mb-4">
-                      {experience.description}
-                    </p>
+                    {/* Content Layout - Image Left, Text Right */}
+                    {experience.image ? (
+                      <div className="flex gap-6 mb-4">
+                        {/* Image */}
+                        <div className="flex-shrink-0">
+                          <img 
+                            src={experience.image} 
+                            alt={experience.title}
+                            className="w-80 h-80 object-cover rounded-lg"
+                          />
+                        </div>
+                        
+                        {/* Content */}
+                        <div className="flex-1">
+                          {/* Description */}
+                          <p className="text-muted-foreground font-cormorant leading-relaxed">
+                            {experience.description}
+                          </p>
+                        </div>
+                      </div>
+                    ) : (
+                      /* Description for entries without image */
+                      <p className="text-muted-foreground font-cormorant leading-relaxed mb-4">
+                        {experience.description}
+                      </p>
+                    )}
 
                     {/* Achievements */}
                     <div className="space-y-2 mb-4">
