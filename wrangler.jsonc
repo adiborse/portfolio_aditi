@@ -1,0 +1,7 @@
+{
+  "name": "aditi-vintage-portfolio",
+  "compatibility_date": "2025-08-09",
+  "assets": {
+    "directory": "./dist"
+  }
+}
